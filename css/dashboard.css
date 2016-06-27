@@ -80,7 +80,6 @@ margin-left: 30px ! important;
     bottom: 0;
     left: 0;
     z-index: 1000;
-    display: block;
 
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */

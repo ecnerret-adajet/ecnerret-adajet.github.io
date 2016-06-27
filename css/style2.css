@@ -302,14 +302,14 @@
 	padding: 0;
 	cursor: pointer;
 	vertical-align: top;
-	color: #6bd68a;
+	color: #ee4d4d;
 	border: none;
 	background: none;
 }
 
 .action:hover,
 .action:focus {
-	color: #6bd68a;
+	color: #ee4d4d;
 	outline: none;
 }
 

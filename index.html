@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +15,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
     <link href="css/style2.css" rel="stylesheet">
+    <link href="css/effect2.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <script src="js/modernizr-custom.js"></script>
+<script src="js/modernizr-custom2.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,11 +32,25 @@
   </head>
 
   <body class="demo-2">
-
-
-    <div class="container-fluid">
+  <div id="ip-container" class="ip-container">
+  
+  
+  <!-- initial header -->
+			<header class="ip-header">
+				<h1 class="ip-logo">
+            <img class="img-responsive ip-inner" src="img\logo.png" style="width: 200px; height: auto;">
+				</h1>
+				<div class="ip-loader">
+					<svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
+						<path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+						<path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
+					</svg>
+				</div>
+			</header>
+  
+    <div class="container-fluid ip-main">
       <div class="row">
-        <div class="col-sm-4 col-md-3 sidebar" >
+        <div class="col-sm-4 col-md-3  sidebar" >
 
           <ul class="nav nav-sidebar">
            <img class="img-responsive img-circle profile" src="img/photo.jpg">
@@ -398,6 +413,7 @@
       </div><!-- row div -->
     </div><!-- container fluid div  -->
 
+</div><!-- ip-container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -405,10 +421,13 @@
     <script src=".js/jquery.min.js"></script>
     <script src=".js/bootstrap.min.js"></script>
 
-
+    
     <script src="js/imagesloaded.pkgd.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/classie.js"></script>
+  <script src="js/classie2.js"></script>
+  <script src="js/pathLoader.js"></script>
+  <script src="js/load.js"></script>
   <script src="js/main.js"></script>
   <script>
     (function() {
