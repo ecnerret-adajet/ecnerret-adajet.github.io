@@ -73,7 +73,7 @@ sudo ssh-keygen -t rsa -b 4096 -C "github"
 ```
 Just hit `enter` until the question is done.
 ```yaml
-sudo ssh-keygen -t rsa -b 4096 -C "github"
+sudo cat /root/.ssh/id_rsa.pub
 ```
 A random encrypted key will appear. copy the `rsa` key until the end of `==` string only and then proceed to the next step.
 
