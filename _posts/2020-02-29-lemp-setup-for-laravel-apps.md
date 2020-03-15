@@ -171,7 +171,7 @@ sudo chmod 755 /var/www/html/site/storage
 ```
 ### 10. Finishing touch
 For the last part for this setup. make sure you execute the following script to completely connect your app.
-**Note:** Make sure your on your project path `cd /var/www/html/site` for the following script below
+**Note:** Navigate to this path first `cd /var/www/html/site`
 {: .notice--danger}
 ```yaml
  cp .env.example .env
