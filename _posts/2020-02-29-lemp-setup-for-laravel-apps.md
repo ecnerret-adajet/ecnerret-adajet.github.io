@@ -114,7 +114,7 @@ cd /etc/nginx
 ```
 To create your `site` nginx configuration.
 ```yaml
-sudo vim /etc/nginx/sites-available/default
+sudo vim /etc/nginx/sites-available/site
 ```
 Paste this sample server configuration and replace the `site` part to your project name
 ```yaml
