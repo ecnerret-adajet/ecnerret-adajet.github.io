@@ -20,7 +20,7 @@ title                    : "Code-Minutes"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Terrence Tejada"
-description              : "An amazing website."
+description              : "Just another self-taught coder"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
