@@ -10,7 +10,7 @@ tags:
   - Laravel
   - maatwebsite
 ---
-This is a simple guide on how we can import excel or csv file and store the content directly to database. Using `maatwebsite` pacakge with `Vuejs` on Laravel version 5.8 to 7 as of this writing.
+This is a simple guide on how we can import excel or csv file and store the content directly to database using `maatwebsite` pacakge with `Vuejs` on Laravel version 5.8 to 7 as of this writing.
 
 For the basic part, we will not include here the installation and setting-up config of laravel project. I assumed that you already have laravel ready.
 
@@ -37,11 +37,11 @@ Open again the command-line and run the vendor publish command
 php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
 ```
 ### 2. Setting up Imports
-
+Now let's create a dedicated Import class to handle the data on our excel file.
 ```yaml
 php artisan make:import UsersImport --model=User
 ```
-
+Next, navigate to to `App\Imports\UsersImport.php`. your excel header should be contain the the following object the from the `UserInport` return function.
 ```php
 <?php
 
@@ -68,8 +68,8 @@ class UsersImport implements ToModel, WithHeadingRow
     }
 }
 ```
-
-
+### 3. Import Backend Setup
+Here's the working example on we can import a excel file to our backend controller.
 ```php
 <!-- UsersController -->
 use App\Imports\UsersImport;
@@ -91,14 +91,13 @@ class UsersController extends Controller
     }
 }
 ```
-
+Then, open your `web.php` or `api.php` to set-up the route link for our import function.
 ```php
 <!-- routes/web.php or routes/api -->
 Route::post('/users/import','UsersController@import');
 ```
-
-### 3. upload file thorugh Vuejs
-
+### 3. Front-End Setup
+Now that we prepared the backend function to process the excel file. we will now proceed to our vuejs section. from here, you may notice that we used axios to call the route link that we setup from `step 3`. you may extend this simple component whatever you want.
 ```javascript
 <template>
    <div class="row">
@@ -149,4 +148,5 @@ Route::post('/users/import','UsersController@import');
   }
 </script>
 ```
+That's all. Happy Coding !
 
