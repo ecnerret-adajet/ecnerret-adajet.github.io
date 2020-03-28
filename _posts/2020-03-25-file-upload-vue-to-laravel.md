@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Import Excel data to DB using Vue to Laravel"
+title:  "Import Excel data to DB using Vue and Laravel"
 categories:
   - Web
 tags:
@@ -12,14 +12,14 @@ tags:
 ---
 This is a simple guide on how we can import excel or csv file and store the content directly to database using `maatwebsite` pacakge with `Vuejs` on Laravel version 5.8 to 7 as of this writing.
 
-For the basic part, we will not include here the installation and setting-up config of laravel project. I assumed that you already have laravel ready.
+For the basic part, we will not include here the installation of laravel project. I assumed that you already have laravel ready.
 
 ### 1. Install maatwebsite pacakge
-First, we will install the package via composer dependcy manager. open command-line, navigate to your project path and run the following command below.
+First, we will install the package via composer dependency manager. open a command-line, navigate to your project path and run the following command below.
 ```yaml
 composer require maatwebsite/excel
 ```
-After installling, go to your `config/app.php` file and the these to `provider` and `aliase` section.
+After installing the package. go to your `config/app.php` file and add these config to `provider` and `aliase` section.
 ```php
 'providers' => [
 	/*
@@ -41,7 +41,7 @@ Now let's create a dedicated Import class to handle the data on our excel file.
 ```yaml
 php artisan make:import UsersImport --model=User
 ```
-Next, navigate to to `App\Imports\UsersImport.php`. your excel header should be contain the the following object the from the `UserInport` return function.
+Next, navigate to to `App\Imports\UsersImport.php`. The excel file  header should contain the following object based from the `UserImport` return function.
 ```php
 <?php
 
@@ -68,6 +68,12 @@ class UsersImport implements ToModel, WithHeadingRow
     }
 }
 ```
+If you like to know more about what other options available from this pacakge. you may visit the official documentation page.
+
+**Note:** https://docs.laravel-excel.com/
+{: .notice--info}
+
+
 ### 3. Import Backend Setup
 Here's the working example on we can import a excel file to our backend controller.
 ```php
@@ -97,7 +103,7 @@ Then, open your `web.php` or `api.php` to set-up the route link for our import f
 Route::post('/users/import','UsersController@import');
 ```
 ### 3. Front-End Setup
-Now that we prepared the backend function to process the excel file. we will now proceed to our vuejs section. from here, you may notice that we used axios to call the route link that we setup from `step 3`. you may extend this simple component whatever you want.
+Now that we prepared the backend function to process the excel file. we will now proceed to our vuejs section. From here, you may notice that we used `axios` to call the route link that we setup from `step 3`. you may extend this simple component whatever you want.
 ```javascript
 <template>
    <div class="row">
@@ -148,5 +154,12 @@ Now that we prepared the backend function to process the excel file. we will now
   }
 </script>
 ```
-That's all. Happy Coding !
+### 4. Compile Project.
+Finally, compile the project to load our js files by running `npm` command. Open up again your command-line and run the script below.
+```yaml
+npm run dev
+```
+And that's all. open now a browser to test the program.
+
+Happy Coding.
 
