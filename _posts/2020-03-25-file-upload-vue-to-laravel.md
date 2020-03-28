@@ -37,11 +37,11 @@ Open again the command-line and run the vendor publish command
 php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
 ```
 ### 2. Setting up Imports
-Now let's create a dedicated Import class to handle the data on our excel file.
+Now let's create a dedicated Import class to handle the data on our excel file. switch again to command-line.
 ```yaml
 php artisan make:import UsersImport --model=User
 ```
-Next, navigate to to `App\Imports\UsersImport.php`. The excel file  header should contain the following object based from the `UserImport` return function.
+Next, navigate to `App\Imports\UsersImport.php`, the excel file header should contain the following properties based from the `UserImport` return function.
 ```php
 <?php
 
@@ -68,7 +68,7 @@ class UsersImport implements ToModel, WithHeadingRow
     }
 }
 ```
-If you like to know more about what other options available from this pacakge. you may visit the official documentation page.
+If you like to know more about the other options available from this pacakge. you may visit the official documentation page.
 
 **URL:** https://docs.laravel-excel.com/
 {: .notice--info}
