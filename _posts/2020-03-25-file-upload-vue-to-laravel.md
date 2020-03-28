@@ -70,7 +70,7 @@ class UsersImport implements ToModel, WithHeadingRow
 ```
 If you like to know more about what other options available from this pacakge. you may visit the official documentation page.
 
-**Note:** https://docs.laravel-excel.com/
+**URL:** https://docs.laravel-excel.com/
 {: .notice--info}
 
 
