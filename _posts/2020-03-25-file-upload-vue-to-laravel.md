@@ -77,7 +77,8 @@ If you like to know more about what other options available from this pacakge. y
 ### 3. Import Backend Setup
 Here's the working example on we can import a excel file to our backend controller.
 ```php
-<!-- UsersController -->
+<?php
+// UsersController
 use App\Imports\UsersImport;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Http\Controllers\Controller;
@@ -99,7 +100,8 @@ class UsersController extends Controller
 ```
 Then, open your `web.php` or `api.php` to set-up the route link for our import function.
 ```php
-<!-- routes/web.php or routes/api -->
+<?php
+// routes/web.php or routes/api 
 Route::post('/users/import','UsersController@import');
 ```
 ### 3. Front-End Setup
