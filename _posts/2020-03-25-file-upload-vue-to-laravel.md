@@ -41,7 +41,7 @@ Now let's create a dedicated Import class to handle the data on our excel file. 
 ```yaml
 php artisan make:import UsersImport --model=User
 ```
-Next, navigate to `App\Imports\UsersImport.php`, the excel file header should contain the following properties based from the `UserImport` return function.
+Next, navigate to `App\Imports\UsersImport.php`, the excel file header should contain the following properties based from the `UsersImport` return function.
 ```php
 <?php
 
