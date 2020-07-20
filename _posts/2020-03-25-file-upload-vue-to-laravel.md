@@ -101,7 +101,7 @@ class UsersController extends Controller
 Then, open your `web.php` or `api.php` to set-up the route link for our import function.
 ```php
 <?php
-// routes/web.php or routes/api 
+// routes/web.php or routes/api
 Route::post('/users/import','UsersController@import');
 ```
 ### 3. Front-End Setup
