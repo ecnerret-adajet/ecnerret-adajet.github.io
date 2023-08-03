@@ -32,7 +32,7 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0;
+  margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
@@ -201,6 +201,14 @@
     font-size: 0.6em;
   }
 
+  .page__meta-sep {
+    display: block;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .archive__item-title {
     margin-top: 0.5em;
     font-size: $type-size-5;
@@ -233,7 +241,7 @@
 .feature__wrapper {
   @include clearfix();
   margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
 
   .archive__item-title {
     margin-bottom: 0;

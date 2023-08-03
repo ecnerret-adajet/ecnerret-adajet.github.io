@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Code-Minutes"
+title                    : "Terrence Tejada"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Terrence Tejada"
@@ -108,8 +108,8 @@ analytics:
 # Site Author
 author:
   name             : "Terrence Tejada"
-  avatar           : "/assets/images/terrence_tejada.jpg"
-  bio              : "Just another self-taught coder"
+  avatar           : "/assets/images/terrence.jpg"
+  bio              : "🛠️ Web & Mobile Developer"
   location         : "Manila, Philippines"
   email            :
   links:
@@ -293,6 +293,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      show_date: true
   # _pages
   - scope:
       path: ""
