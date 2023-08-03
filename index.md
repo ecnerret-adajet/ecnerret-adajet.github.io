@@ -1,6 +1,6 @@
 ---
 layout: single
-title: ""
+title: false
 author_profile: true
 classes: wide
 
@@ -18,7 +18,7 @@ feature_row:
 
 ---
 
-## Think, Create, Simplify!
+# Think, Create, Simplify!
 
 🌐 Welcome to this playground! 🚀 Let me be your guide! 🌟 Grab your favorite drink (mine's ☕!), relax and let’s start exploring 💻🎉
 
